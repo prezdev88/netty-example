@@ -1,13 +1,13 @@
-package cl.spring.tcp.example;
+package cl.prezdev;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class SpringJavaSeExampleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(SpringJavaSeExampleApplication.class, args);
 	}
 
 }

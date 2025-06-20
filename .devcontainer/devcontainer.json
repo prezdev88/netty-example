@@ -1,0 +1,85 @@
+{
+	"name": "netty-example",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "dev",
+	"workspaceFolder": "/netty-example",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "17",
+			"installMaven": "true",
+			"installGradle": "false",
+			"mavenVersion": "3.9.5"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "18.18.0"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"[java]": {
+					"editor.defaultFormatter": "redhat.java"
+				},
+				"terminal.integrated.fontSize": 18,
+				"terminal.explorerKind": "external",
+				"editor.tabSize": 4,
+				"editor.mouseWheelZoom": true,
+				"editor.fontSize": 12,
+				"editor.fontFamily": "monospace",
+				"editor.fontVariations": false,
+				"editor.fontWeight": "367",
+				"editor.lineHeight": 22,
+				"editor.parameterHints.enabled": false,
+				"editor.inlayHints.enabled": "off",
+				"editor.tokenColorCustomizations": {
+					"variables": "#9876AA"
+				},
+				"files.autoSave": "afterDelay",
+				"files.autoSaveDelay": 200,
+				"window.zoomLevel": 0.3,
+				"gitlens.codeLens.enabled": false,
+				"explorer.compactFolders": false,
+				"explorer.confirmDragAndDrop": false,
+				"git.autofetch": true,
+				"workbench.tree.indent": 14,
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "bash",
+						"icon": "terminal-bash"
+					},
+					"fish": {
+						"path": "fish",
+					}
+				},
+				"workbench.colorTheme": "IntelliJ Neo Dark",
+				"workbench.iconTheme": "vsc-jetbrains-icons-enhanced",
+				"redhat.telemetry.enabled": true
+			},
+			"extensions": [
+				"vscjava.vscode-java-test",
+				"Gruntfuggly.todo-tree",
+				"BrennonDenny.vsc-jetbrains-icons-enhanced",
+				"vscjava.vscode-lombok",
+				"SonarSource.sonarlint-vscode",
+				"vscjava.vscode-spring-boot-dashboard",
+				"vmware.vscode-boot-dev-pack",
+				"vmware.vscode-spring-boot",
+				"vscjava.vscode-spring-initializr",
+				"vscjava.vscode-java-dependency",
+				"vscjava.vscode-maven",
+				"redhat.java",
+				"vscjava.vscode-gradle",
+				"vscjava.vscode-java-pack",
+				"dbaeumer.vscode-eslint",
+				"vscjava.vscode-java-debug",
+				"hyperdarker.intellij-neo-dark",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"alefragnani.Bookmarks",
+				"eamodio.gitlens",
+				"yzhang.markdown-all-in-one",
+				"mhutchie.git-graph"
+			]
+		}
+	}
+}

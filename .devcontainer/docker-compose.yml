@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dev:
+    image: mcr.microsoft.com/devcontainers/java:1-17-bullseye
+    container_name: netty-example-dev-container
+    command: sleep infinity
+    volumes:
+      - ../:/netty-example:cached
+    ports:
+      - "8080:8080"
+    networks:
+      - monitoring
+
+networks:
+  monitoring:
