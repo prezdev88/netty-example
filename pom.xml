@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>3.5.3</version>
+		<relativePath/>
 	</parent>
 	<groupId>cl.prezdev</groupId>
 	<artifactId>netty-example</artifactId>
@@ -47,7 +47,6 @@
 		<dependency>
 			<groupId>io.netty</groupId>
 			<artifactId>netty-all</artifactId>
-			<version>4.1.107.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.annotation</groupId>
