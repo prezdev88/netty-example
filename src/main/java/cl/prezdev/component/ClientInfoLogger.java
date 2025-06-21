@@ -5,7 +5,10 @@ import io.netty.channel.ChannelHandlerContext;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
+import cl.prezdev.devtour.DevTour;
+
 @Slf4j
+@DevTour(order = 3, description = "Logs client connection and disconnection information")
 @Component
 public class ClientInfoLogger {
 

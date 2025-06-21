@@ -10,6 +10,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import cl.prezdev.devtour.DevTour;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -26,6 +28,7 @@ public class NettyTcpServer {
 
     private final TcpChannelInitializer tcpChannelInitializer;
 
+    @DevTour(order = 1, description = "Inicia el servidor TCP")
     @PostConstruct
     public void start() throws InterruptedException {
         bossGroup = new NioEventLoopGroup(1);

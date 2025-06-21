@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import cl.prezdev.devtour.DevTour;
 import cl.prezdev.handler.ConnectionLoggingHandler;
 import cl.prezdev.handler.TcpServerHandler1;
 import cl.prezdev.handler.TcpServerHandler2;
@@ -37,6 +38,7 @@ public class TcpChannelInitializer extends ChannelInitializer<SocketChannel> {
     private final ConnectionLoggingHandler connectionLoggingHandler;
     private final HeartbeatHandler heartbeatHandler;
 
+    @DevTour(order = 2, description = "Inicializa el canal TCP")
     @Override
     protected void initChannel(SocketChannel socketChannel) {
         ChannelPipeline p = socketChannel.pipeline();
